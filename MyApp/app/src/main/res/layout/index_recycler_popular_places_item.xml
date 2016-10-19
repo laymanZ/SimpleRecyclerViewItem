@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/hot_title_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent = "10.6%w"
+            android:orientation="horizontal">
+            <ImageView
+                app:layout_marginLeftPercent = "3.2%w"
+                app:layout_marginRightPercent = "1.6%w"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/home_chang" />
+            <TextView
+                app:layout_textSizePercent = "4%w"
+                android:textColor="#fff000"
+                android:text="#fff000"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/hot_more"
+                android:layout_gravity="center_vertical"
+                android:text="更多"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_textSizePercent = "3.5%w"/>
+            <ImageView
+                android:id="@+id/hot_more_img"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/nav_fanghui"
+                app:layout_marginRightPercent = "3.2%w"/>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/hot_back_img"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent = "46.7%w">
+        </ImageView>
+        <ImageView
+            android:layout_alignParentTop="true"
+            android:id="@+id/stop_car_sign"
+            app:layout_widthPercent = "9.6%w"
+            app:layout_marginLeftPercent = "4%w"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/home_tingchechang"/>
+        <TextView
+            android:background="@android:color/white"
+            android:layout_centerInParent="true"
+            android:text="城市标志"
+            android:textColor="#000000"
+            app:layout_textSizePercent = "5.6%w"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent = "10.6%w"
+            android:orientation="horizontal">
+            <ImageView
+                app:layout_marginLeftPercent = "3.2%w"
+                app:layout_marginRightPercent = "1.6%w"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/home_daohang" />
+
+            <TextView
+                app:layout_textSizePercent = "4%w"
+                android:textColor="#000000"
+                android:text="一个地址的名称"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/go_to_here_img"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/home_daozheliqu" />
+            <TextView
+                android:id="@+id/go_to_here_tv"
+                android:layout_gravity="center_vertical"
+                android:text="到这里去"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_textSizePercent = "3.5%w"
+                app:layout_marginRightPercent = "3.2%w"/>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</LinearLayout>

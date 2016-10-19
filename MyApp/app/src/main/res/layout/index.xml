@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_index"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/nav_erweima"
+                app:layout_marginLeftPercent="3.2%w" />
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="这是标题"
+                app:layout_textSizePercent = "6%w"
+                android:textColor="@color/nav_top_tvcoloe"/>
+            <ImageView
+                app:layout_marginLeftPercent = "2.7%w"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/nav_xiala"/>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/nav_daohang"
+                    app:layout_marginRightPercent="3.2%w" />
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <com.example.z.myapp.view.NoScrollViewPager
+        android:id="@+id/index_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </com.example.z.myapp.view.NoScrollViewPager>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/index_bottom_nav_first"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/index_nav_bottom_index_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/shouye_on" />
+
+            <TextView
+                android:id="@+id/index_nav_bottom_index_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="首页"
+                android:textColor="@color/nav_bottom_select"
+                app:layout_textSizePercent = "12%w" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/index_bottom_nav_second"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/index_nav_bottom_city_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/chengshi_off" />
+
+            <TextView
+                android:id="@+id/index_nav_bottom_city_tv"
+                android:textColor="@color/nav_bottom_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="城市服务"
+                app:layout_textSizePercent = "12%w" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/index_bottom_nav_third"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/index_nav_bottom_me_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/wode_off" />
+
+            <TextView
+                android:id="@+id/index_nav_bottom_me_tv"
+                android:textColor="@color/nav_bottom_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的"
+                app:layout_textSizePercent = "12%w"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+     <com.youth.banner.Banner
+        android:id="@+id/index_banner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent = "34%w"
+        app:indicator_drawable_selected="@drawable/home_dian_hover"
+        app:indicator_drawable_unselected="@drawable/home_dian_normal">
+
+    </com.youth.banner.Banner>
+</com.zhy.android.percent.support.PercentLinearLayout>

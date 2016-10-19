@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00b38b</color>
+    <color name="colorPrimaryDark">#00b38b</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+
+    <color name="nav_bottom_normal">#999999</color>
+    <color name="nav_bottom_select">#00b38b</color>
+    <color name="nav_top_tvcoloe">#ffffff</color>
+
+    <color name="recommend_activity">#383838</color>
+    <color name="more_color">#999999</color>
+    <color name="recommend_first_message">#33000000</color>
+</resources>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/index_recommend_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent = "10.6%w"
+            android:orientation="horizontal">
+            <ImageView
+                app:layout_marginLeftPercent = "3.2%w"
+                app:layout_marginRightPercent = "1.6%w"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/home_huo" />
+            <TextView
+                app:layout_textSizePercent = "4%w"
+                android:textColor="@color/recommend_activity"
+                android:text="@string/recommendActivity"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/recommend_more"
+                android:layout_gravity="center_vertical"
+                android:text="更多"
+                android:textColor="@color/more_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_textSizePercent = "3.5%w"/>
+            <ImageView
+                android:id="@+id/recommend_more_img"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/nav_fanghui"
+                app:layout_marginRightPercent = "3.2%w"/>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+
+            android:scaleType="fitXY"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            app:layout_heightPercent = "47%w"
+            android:id="@+id/recommend_first_image"/>
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:background="@color/recommend_first_message"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignBottom="@id/recommend_first_image"
+            app:layout_heightPercent = "6.6%w">
+            <TextView
+                android:textColor="@android:color/white"
+                android:layout_gravity="center"
+                android:text="@string/recommend_first_message"
+                app:layout_marginLeftPercent = "2.7%w"
+                app:layout_textSizePercent = "3.2%w"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <android.support.v7.widget.CardView
+            app:layout_marginTopPercent = "0.5%w"
+            app:layout_marginBottomPercent = "6.6%w"
+            app:layout_marginRightPercent = "0.5%w"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent = "24.5%w"
+            android:layout_weight="1">
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+
+                    android:scaleType="fitXY"
+                    android:id="@+id/recommend_second_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:background="@color/recommend_first_message"
+                    android:layout_alignBottom="@id/recommend_second_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent = "24.5%w">
+                    <TextView
+                        app:layout_marginLeftPercent = "8.1%w"
+                        app:layout_textSizePercent = "9.6%w"
+                        android:textColor="@android:color/white"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="成熟男士腕表你还asdfasf"/>
+                </com.zhy.android.percent.support.PercentLinearLayout>
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            app:layout_marginBottomPercent = "6.6%w"
+            app:layout_marginTopPercent = "0.5%w"
+            app:layout_marginRightPercent = "0.5%w"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent = "24.5%w"
+            android:layout_weight="1">
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+
+                    android:scaleType="fitXY"
+                    android:id="@+id/recommend_third_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:background="@color/recommend_first_message"
+                    android:layout_alignBottom="@id/recommend_third_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent = "24.5%w">
+
+                    <TextView
+                        app:layout_marginLeftPercent = "8.1%w"
+                        app:layout_textSizePercent = "9.6%w"
+                        android:textColor="@android:color/white"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="成熟男士腕表你还asdfasf"/>
+                </com.zhy.android.percent.support.PercentLinearLayout>
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            app:layout_marginBottomPercent = "6.6%w"
+            app:layout_marginTopPercent = "0.5%w"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent = "24.5%w"
+            android:layout_weight="1">
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+
+                    android:scaleType="fitXY"
+                    android:id="@+id/recommend_forth_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:background="@color/recommend_first_message"
+                    android:layout_alignBottom="@id/recommend_forth_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent = "24.5%w">
+
+                    <TextView
+                        app:layout_marginLeftPercent = "8.1%w"
+                        app:layout_textSizePercent = "9.6%w"
+                        android:textColor="@android:color/white"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="成熟男士腕表你还asdfasf"/>
+                </com.zhy.android.percent.support.PercentLinearLayout>
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+        </android.support.v7.widget.CardView>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</LinearLayout>

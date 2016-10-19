@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/index_recycler_circler_show"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/index_circleshow_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="53%w">
+                <fragment
+                    android:name="com.example.z.myapp.ui.fragment.IndexCircleShowFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+        </android.support.v7.widget.CardView>
+
+        <!--<View
+            app:layout_marginTopPercent = "0.1%w"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#000000"/>-->
+
+</com.zhy.android.percent.support.PercentLinearLayout>
